@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Reportes PWD</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="formulario-card">
+      <h2>📄 Generador de Reportes</h2>
+
+      <div class="grupo-input">
+        <label for="inputNombre">Nombre del Operador/Alumno:</label>
+        <input type="text" id="inputNombre" placeholder="Ej: Ramiro Caballo" required aria-label="Nombre del operador" />
+      </div>
+
+      <div class="grupo-input">
+        <label for="inputDetalle">Detalle o Descripción del Registro:</label>
+        <textarea id="inputDetalle" rows="6" placeholder="Ej: Sensor calibrado y operativo" required aria-label="Detalle del registro"></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="btnGenerar" class="btn">Generar PDF</button>
+        <button id="btnLimpiar" class="btn secondary" type="button">Limpiar</button>
+      </div>
+
+      <p class="small">Documento generado automáticamente - EEST N°1 Vicente López</p>
+    </div>
+  </div>
+
+  <!-- IMPORTACIÓN DE LA LIBRERÍA jsPDF DESDE CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
